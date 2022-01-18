@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <title>KönyvesPolc</title>
+    </head>
+    <body>
+        <div class="container mt-4">
+            <h1 class="display-4 text-center">Könyves<span class="text-primary">Polc</span></h1>
+            <form id="book-form">
+                <div class="form-group">
+                    <label for="title">Cím</label>
+                    <input type="text" id="title" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="author">Szerző</label>
+                    <input type="text" id="author" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="pages">Oldalszám</label>
+                    <input type="number" id="pages" class="form-control">
+                </div>
+                <div class="form-group">
+                        <label for="topic">Téma kiválasztása:</label>
+                        <select class="form-control" id="topic">
+                          <option></option>
+                          <option>Sci-fi</option>
+                          <option>Fantasy</option>
+                          <option>Krimi</option>
+                          <option>Történelmi</option>
+                        </select>
+                      </div>
+                    <div style="text-align:center;">
+                            <input type="submit" value="Hozzáadás" class="btn btn-primary btn-block mt-4" >
+                    </div>
+                <table class="table table-striped mt-4">
+                    <thead>
+                        <tr>
+                            <th>Cím</th>
+                            <th>Szerző</th>
+                            <th>Oldalszám</th>
+                            <th>Téma</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="book-list"></tbody>
+                </table>
+            </form>
+        </div>
+
+        <script src="app.js"></script>
+    </body>
+</html>
